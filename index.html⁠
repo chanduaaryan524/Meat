@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khan Market - Fresh Meat Menu</title>
+    <style>
+        :root {
+            --primary: #8b0000; /* Deep red for a butcher/meat shop theme */
+            --dark: #222;
+            --light: #f9f9f9;
+            --border: #ddd;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0; font-size: 2.5rem; }
+        p.subtitle { margin: 0.5rem 0 0; opacity: 0.9; }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+            border-top: 5px solid var(--primary);
+        }
+        
+        .category-card h2 {
+            margin-top: 0;
+            color: var(--primary);
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 0.5rem;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed var(--border);
+        }
+        .menu-item:last-child { border-bottom: none; }
+        
+        .item-name { font-weight: 500; }
+        .item-price { font-weight: bold; color: var(--dark); white-space: nowrap; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Khan Market</h1>
+        <p class="subtitle">Premium Quality Fresh Meat & Cuts</p>
+    </header>
+
+    <div class="container">
+        <div class="menu-grid">
+            
+            <!-- Baby Goat -->
+            <div class="category-card">
+                <h2>Baby Goat</h2>
+                <div class="menu-item"><span class="item-name">Whole Baby Goat</span><span class="item-price">$13.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Half Baby Goat W/Head</span><span class="item-price">$13.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Half Baby Goat No Head</span><span class="item-price">$14.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Half Baby Goat No Head No Liver</span><span class="item-price">$15.49 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Mix</span><span class="item-price">$19.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Keema</span><span class="item-price">$19.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Leg/Shoulder</span><span class="item-price">$17.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Neck/Chops</span><span class="item-price">$17.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Liver/Kidney/Heart</span><span class="item-price">$11.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Chest (Ribs)</span><span class="item-price">$11.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Head</span><span class="item-price">$6.00 / Ea</span></div>
+                <div class="menu-item"><span class="item-name">Baby Goat Fresh Leg Paya</span><span class="item-price">$4.99 / Lb</span></div>
+            </div>
+
+            <!-- Medium Goat -->
+            <div class="category-card">
+                <h2>Medium Goat</h2>
+                <div class="menu-item"><span class="item-name">Medium Goat</span><span class="item-price">$11.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Medium Goat Keema</span><span class="item-price">$14.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Burnt Goat Paya</span><span class="item-price">$6.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Goat Paya W/Skin</span><span class="item-price">$5.99 / Lb</span></div>
+            </div>
+
+            <!-- Lamb -->
+            <div class="category-card">
+                <h2>Lamb</h2>
+                <div class="menu-item"><span class="item-name">Boneless Lamb</span><span class="item-price">$13.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Lamb Mix</span><span class="item-price">$11.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Lamb Keema</span><span class="item-price">$13.99 / Lb</span></div>
+            </div>
+
+            <!-- Veal -->
+            <div class="category-card">
+                <h2>Veal</h2>
+                <div class="menu-item"><span class="item-name">Veal Boneless</span><span class="item-price">$13.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Veal Keema</span><span class="item-price">$13.99 / Lb</span></div>
+                <div class="menu-item"><span class="item-name">Veal W/Bone</span><span class="item-price">$11.99 / Lb</span></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
